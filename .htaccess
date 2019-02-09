@@ -4,6 +4,9 @@ ErrorDocument 404 /404.html
 
 RewriteEngine On
 
+RewriteRule ^desktop/$ /home-walk-1.html [L]
+
+
 # Check if this is the noredirect query string
 RewriteCond %{QUERY_STRING} (^|&)noredirect=true(&|$)
 # Set a cookie, and skip the next rule
