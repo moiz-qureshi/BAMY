@@ -36,4 +36,4 @@ RewriteCond %{HTTP_HOST} ^m\.
 # Check if cookie is not set to force mobile site.
 RewriteCond %{HTTP_COOKIE} !^.*m=1.*$ [NC]
 # Now redirect to the mobile site preserving http or https.
-RewriteRule ^ %{ENV:ps}://bayareamuslimyouth.com%{REQUEST_URI} [R,L]
+RewriteRule ^ %{ENV:ps}://bayareamuslimyouth.com/desktop/welcome%{REQUEST_URI} [R,L]
