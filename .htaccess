@@ -4,7 +4,7 @@ ErrorDocument 404 /404.html
 
 RewriteEngine On
 
-RewriteRule ^desktop/$ /home-walk-1.html [L]
+RewriteRule ^desktop/$ /desktop/home-walk-1.html [L]
 
 
 # Check if this is the noredirect query string
