@@ -12,7 +12,7 @@ RewriteRule ^ - [CO=m:1:bayareamuslimyouth.com]
 
 # Check if m=0 is set and set cookie 'm' equal to 0.
 RewriteCond %{QUERY_STRING} (^|&)m=0(&|$)
-RewriteRule ^ - [CO=m:0:bayareamuslimyouth.com]
+RewriteRule ^ - [CO=m:0:bayareamuslimyouth.com/home]
 
 # Cookie can't be set and read in the same request so check.
 RewriteCond %{QUERY_STRING} (^|&)m=0(&|$)
