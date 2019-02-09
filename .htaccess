@@ -1,8 +1,3 @@
 ErrorDocument 404 /404.html
 
-Options +FollowSymLinks -MultiViews
-# Turn mod_rewrite on
-RewriteEngine On
-RewriteBase /
 
-RewriteRule ^$ /desktop/welcome [NC,P]
