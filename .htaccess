@@ -1,20 +1,8 @@
-# .htaccess main domain to subdirectory redirect 
-# Do not change this line. 
-RewriteEngine on 
-# Change example.com to be your main domain. 
-RewriteCond %{HTTP_HOST} ^(www.)?bayareamuslimyouth.com$ 
-# Change 'subdirectory' to be the directory you will use for your main domain. 
-RewriteCond %{REQUEST_URI} !^/desktop/ 
-# Don't change the following two lines. 
-RewriteCond %{REQUEST_FILENAME} !-f 
-RewriteCond %{REQUEST_FILENAME} !-d 
-# Change 'subdirectory' to be the directory you will use for your main domain. 
-RewriteRule ^(.*)$ /desktop/$1 
-# Change example.com to be your main domain again. 
-# Change 'subdirectory' to be the directory you will use for your main domain 
-# followed by / then the main file for your site, index.php, index.html, etc. 
-RewriteCond %{HTTP_HOST} ^(www.)?bayareamuslimyouth.com$ 
-RewriteRule ^(/)?$ desktop/welcome.html [L]
-
 ErrorDocument 404 /404.html
 
+Options +FollowSymLinks -MultiViews
+# Turn mod_rewrite on
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^$ /desktop/welcome [NC,P]
