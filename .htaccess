@@ -36,7 +36,7 @@ RewriteCond %{HTTP_HOST}          !^m\.
 # Check to make sure we haven't set the cookie before
 RewriteCond %{HTTP:Cookie}        !\smredir=0(;|$)
 # Now redirect to the mobile site
-RewriteRule ^ http://bayareamuslimyouth.com/mobile.html%{REQUEST_URI} [R,L]
+RewriteRule ^ http://bayareamuslimyouth.com/mobile.html%{REQUEST_URI} [R]
 
 
 
