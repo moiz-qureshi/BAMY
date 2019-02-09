@@ -1,3 +1,5 @@
+DirectoryIndex /desktop/home-walk-1.html
+
 ErrorDocument 404 /404.html
 
 RewriteEngine On
